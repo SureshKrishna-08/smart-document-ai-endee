@@ -1,0 +1,142 @@
+[data-testid="stAppViewContainer"] {
+    background-color: transparent !important;
+    color: #F8FAFC !important;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Ensure the app view is clear so particles show through */
+.stApp {
+    background-color: transparent !important;
+}
+
+/* Glassmorphism sidebar */
+[data-testid="stSidebar"] {
+    background: rgba(2, 6, 23, 0.7) !important;
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(0, 245, 160, 0.2);
+}
+
+/* Gradient Headers */
+h1, h2, h3, h4, h5 {
+    background: linear-gradient(to right, #00F5A0, #00D9F5) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 800 !important;
+}
+
+/* Specific to login gradient overrides */
+.login-header {
+    text-align: center;
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #00F5A0, #00D9F5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+}
+.login-subheader {
+    text-align: center;
+    color: #94A3B8;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+}
+
+/* Glass Cards */
+.metric-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 245, 160, 0.15);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    cursor: default;
+    margin-bottom: 1rem;
+}
+.metric-card:hover {
+    border-color: #00F5A0;
+    box-shadow: 0 0 20px rgba(0, 245, 160, 0.3);
+    transform: translateY(-5px);
+}
+.metric-card h2 {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+}
+.metric-card p {
+    color: #94A3B8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #00F5A0 0%, #00D9F5 100%) !important;
+    color: #020617 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.7rem 1.5rem !important;
+    font-weight: 800 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 245, 160, 0.4) !important;
+    width: 100%;
+}
+.stButton > button:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 0 25px rgba(0, 245, 160, 0.8) !important;
+}
+
+/* Timeline */
+.timeline-item {
+    border-left: 2px solid rgba(0, 245, 160, 0.3);
+    padding-left: 20px;
+    margin-left: 10px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00F5A0;
+    box-shadow: 0 0 10px #00F5A0;
+}
+
+.timeline-date {
+    font-size: 0.8rem;
+    color: #94A3B8;
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* AI Differences */
+.added-text { background-color: rgba(0, 245, 160, 0.2); color: #00F5A0; padding: 2px 5px; border-radius: 4px; }
+.removed-text { background-color: rgba(255, 111, 216, 0.2); color: #FF6FD8; padding: 2px 5px; border-radius: 4px; text-decoration: line-through; }
+.modified-text { background-color: rgba(0, 217, 245, 0.2); color: #00D9F5; padding: 2px 5px; border-radius: 4px; }
+
+/* Inputs overrides */
+.stTextInput > div > div > input,
+.stPasswordInput > div > div > input {
+    background-color: rgba(2, 6, 23, 0.8) !important;
+    color: #FFF !important;
+    border: 1px solid rgba(0, 245, 160, 0.3) !important;
+    border-radius: 8px !important;
+}
+.stTextInput > div > div > input:focus,
+.stPasswordInput > div > div > input:focus {
+    box-shadow: 0 0 10px rgba(0, 245, 160, 0.5) !important;
+}
